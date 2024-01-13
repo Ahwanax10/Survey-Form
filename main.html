@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Survey Form</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <h1 id="title">Testing Survey Form</h1>
+ <p id="description">This is a test form.</p>
+ <p id="description">Thank you for taking the time to help me</p>
+ <form id="survey-form">
+
+   <fieldset>
+    <label for="name" id="name-label">Enter your Full name: 
+<input id="name" type="text" required placeholder="Your name" />
+    </label>
+
+    <label for="email" id="email-label">Enter your Email: 
+<input id="email" type="email" required placeholder="example@gmail.com" />
+    </label>
+    <label for="number" id="number-label">Enter your Age: <input id="number" type="number" required min="16" max="120" placeholder="age"/></label>
+    <label for="dropdown" id="gender-label">Your Gender: <select id="dropdown" required>
+    <option>(select one)</option>
+    <option>Male</option>
+    <option>Female</option>
+    </select></label>
+  </fieldset>
+
+  <fieldset>
+    <legend>How did you find this form?</legend>
+    <label><input value="myself" type="radio" name="finding" checked class="inline">Directly by myself</input></label>
+     <label><input value="friends" type="radio" name="finding" class="inline">From your friends</input></label>
+   </fieldset>
+
+   <fieldset>
+     <label for="text" id="text-label" class="text">Tell me Your opinion: <textarea id="text" required placeholder="Tell me your opinion about this survey form"></textarea></label>
+
+     <label><input type="checkbox" class="inline" value="page-style"/>Do you like the page style?</label>
+
+     <label><input type="checkbox" class="inline" value="page-correct"/>Is the page loaded correctly?</label>
+   </fieldset>
+
+    <input type="submit" value="Submit" id="submit"></input>
+
+ </form>
+</body>
+</html>
